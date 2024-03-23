@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	padding: 0;
+	margin: 0;
+	background: #000;
+}
+.mainTit{
+	position: fixed;
+	color: #fff;
+	top: 24px;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	font-family: cursive;
+}
+#carousel {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	height: 600px;
+	margin-top: 40px;
+}
+
+#carousel .swiper {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+#carousel .swiper-wrapper{
+
+}
+#carousel  .swiper-slide {
+	width: 300px;
+	background: #fff;
+	box-shadow: 1px 2px 5px 0px #c39c6b;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #c39c6b;
+	color: #000;
+	font-size: 24px;
+}
+#carousel  .swiper-slide img{
+	display:block;
+	width: 100%;
+}
+#carousel  .swiper-slide p {
+	margin: 0;
+	padding: 12px;
+	animation: show 2s;
+}
+#carousel  .swiper-slide >div{
+	padding: 0 12px;
+	animation: show 2s;
+}
+#carousel .swiper-pagination {
+	width: 100%;
+	bottom: 20px;
+	display: none;
+}
+
+#carousel .swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 5px;
+	background-color: #e8f5ff;
+	width: 20px;
+	height: 10px;
+	opacity: 1;
+	border-radius: 5px;
+}
+
+#carousel .swiper-pagination-bullets .swiper-pagination-bullet-active {
+	background-color: #3eb2f3;
+	width: 35px;
+}
+
+#carousel .swiper-button-prev {
+	left: -30px;
+	width: 45px;
+	height: 45px;
+	/* background: url(images/wm_button_icon.png) no-repeat; */
+	background-position: 0 0;
+	background-size: 100%;
+}
+
+#carousel .swiper-button-prev:hover {
+	background-position: 0 -46px;
+	background-size: 100%
+}
+
+#carousel .swiper-button-next {
+	right: -30px;
+	width: 45px;
+	height: 45px;
+	/* background: url(images/wm_button_icon.png) no-repeat; */
+	background-position: 0 -93px;
+	background-size: 100%;
+}
+
+#carousel .swiper-button-next:hover {
+	background-position: 0 -139px;
+	background-size: 100%
+}
+#carousel .swiper-button-prev::after,#carousel .swiper-button-next::after{
+	content: '';
+}
+@keyframes show{
+	0%{
+		transform: scale(.5);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
