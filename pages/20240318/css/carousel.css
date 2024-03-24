@@ -18,13 +18,13 @@ body{
 	position: relative;
 	width: 1200px;
 	margin: 0 auto;
-	height: 600px;
+	height: 550px;
 	margin-top: 40px;
 }
 
 #carousel .swiper {
 	padding-top: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 50px;
 }
 #carousel .swiper-wrapper{
 
@@ -38,6 +38,8 @@ body{
 	background: #c39c6b;
 	color: #000;
 	font-size: 24px;
+	padding:14px 0;
+	position: relative;
 }
 #carousel  .swiper-slide img{
 	display:block;
@@ -49,8 +51,12 @@ body{
 	animation: show 2s;
 }
 #carousel  .swiper-slide >div{
-	padding: 0 12px;
+	position: absolute;
+	padding: 0 14px 14px;
 	animation: show 2s;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
 }
 #carousel .swiper-pagination {
 	width: 100%;
@@ -109,4 +115,11 @@ body{
 	100%{
 		transform: scale(1);
 	}
+}
+
+.slideMain1{
+	font-size: 106px;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
